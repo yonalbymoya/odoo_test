@@ -17,7 +17,7 @@
         <field name='view_mode'>tree,form</field>
     </record>
 
-    <menuitem id='menu_hardware_root' name='Mi infraestructura' sequence='10'>
+    <menuitem id='menu_hardware_root' name='Mi infraestructura' sequence='10'/>
     <menuitem id='menu_hardware_list' name='Equipos' parent='menu_hardware_root' action='action_hardware'/>
 
 </odoo>
