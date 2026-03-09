@@ -1,0 +1,24 @@
+<odoo>
+    <record id='view_hardware_tree' model='ir.ui.view'>
+        <field name='name'>hardware.item.tree</field>
+        <field name='model'>hardware.item</field>
+        <field name='arch' type='xml'>
+            <tree>
+                <field name='name'/>
+                <field name='tipo'/>
+                <field name='ip_address'/>
+                <field name='location'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id='action_hardware' model='ir.actions.act_window'>
+        <field name='name'>Equipos de hardware</field>
+        <field name='res_model'>hardware.item</field>
+        <field name='view_mode'>tree,form</field>
+    </record>
+
+    <menuitem id='menu_hardware_root' name='Mi infraestructura' sequence='10'>
+    <menuitem id='menu_hardware_list' name='Equipos' parent='menu_hardware_root' action='action_hardware'/>
+
+</odoo>
